@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12px;
+    color: #000;
+    margin: 0;
+    padding: 25px 55px 45px 55px;
+    line-height: 1.35;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 16px;
+    margin: 0 0 2px 0;
+}
+
+.contact {
+    font-size: 12px;
+}
+
+.contact a {
+    color: #000;
+    text-decoration: underline;
+}
+
+header hr {
+    border: none;
+    border-top: 1px solid #000;
+    margin: 8px 0;
+}
+
+
+/* Section Headings */
+
+h2 {
+    font-size: 14px;
+    margin: 10px 0 2px 0;
+}
+
+h2 + hr {
+    border: none;
+    border-top: 1px solid #000;
+    margin: 0 0 7px 0;
+}
+
+
+/* Paragraph */
+
+p {
+    margin: 0 0 8px 0;
+    text-align: justify;
+}
+
+
+/* Education Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 8px;
+}
+
+th {
+    font-weight: bold;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 5px 6px;
+    vertical-align: top;
+}
+
+
+/* Lists */
+
+ul {
+    margin: 4px 0 8px 18px;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+
+/* Projects */
+
+h2:nth-of-type(3) + hr + ul li {
+    margin-bottom: 7px;
+}
+
+
+/* Technical Skills */
+
+h2:nth-of-type(4) + hr + ul li {
+    margin-bottom: 3px;
+}
+
+
+/* Soft Skills */
+
+h2:nth-of-type(5) + hr + ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 4px;
+    margin-left: 18px;
+}
+
+h2:nth-of-type(5) + hr + ul li {
+    margin-bottom: 0;
+}
+
+
+/* Certifications */
+
+h2:nth-of-type(6) + hr + ul li {
+    margin-bottom: 4px;
+}
+
+
+/* Footer */
+
+footer {
+    position: fixed;
+    right: 30px;
+    bottom: 15px;
+    font-size: 10px;
+}
+
+
+/* Print */
+
+@media print {
+
+    body {
+        margin: 0;
+        padding: 25px 45px 40px 45px;
+    }
+
+    footer {
+        position: fixed;
+        right: 20px;
+        bottom: 10px;
+    }
+}
